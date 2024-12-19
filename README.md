@@ -5,25 +5,32 @@
 ## INDEX
 
 - [ABOUT](#about)
-- [LICENSE](#license)
 - [ENVIRONMENT](#environment)
 - [PREPARING](#preparing)
-- [HOW TO USE](#how-to-use)
 
 ---
 
 ## ABOUT
 
+AWS Lambda to hit [NVD API](https://nvd.nist.gov/developers/vulnerabilities) to get CVE information
+
 ---
 
 ## ENVIRONMENT
+
+- AWS Lambda
+- Python3.12
 
 ---
 
 ## PREPARING
 
----
+1. set up `serverless`. See [Getting Started](https://www.serverless.com/framework/docs/getting-started)
+2. clone this repository
+3. `serverless deploy`
 
-## HOW TO USE
+```shell
+cd cvechecker
+sls deploy
+```
 
----
