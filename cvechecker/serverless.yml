@@ -1,0 +1,30 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: sigma18
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: scrapecve
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: cvechecker
+
+provider:
+  name: aws
+  runtime: python3.12
+  timeout: 30
+
+  environment:
+    NVD_API_KEY: ${env:NVD_API_KEY}
+
+functions:
+  rateHandler:
+    handler: handler.run
+    timeout: 30
+    events:
+     - schedule: rate(1 day)
+     # - schedule: rate(1 minute)
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true

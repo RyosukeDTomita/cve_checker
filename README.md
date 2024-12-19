@@ -1,7 +1,6 @@
-<!-- FIXME title -->
-# APP NAME
+# CVE CHECKER
 
-<!--![un license](https://img.shields.io/github/license/RyosukeDTomita/<your-repository>)-->
+![un license](https://img.shields.io/github/license/RyosukeDTomita/cve_checker)
 
 ## INDEX
 
@@ -14,15 +13,6 @@
 ---
 
 ## ABOUT
-
----
-
-## LICENSE
-
----
-
-<!-- NOLICENSE or MIT? -->
-[FIXME](./LICENSE)
 
 ---
 
